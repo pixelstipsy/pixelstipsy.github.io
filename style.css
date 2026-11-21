@@ -1,0 +1,91 @@
+:root {
+  --ink: #000;
+  --paper: #fff;
+  --muted: #777;
+  --line: #e4e4e4;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: "Roboto", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-weight: 300;
+  line-height: 1.6;
+}
+
+main {
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 64px 16px 48px;
+}
+
+a { color: var(--ink); }
+
+.mark {
+  display: block;
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 24px;
+  border-radius: 22px;
+  border: 1px solid var(--line);
+}
+
+h1.title {
+  text-align: center;
+  font-weight: 300;
+  font-size: 56px;
+  letter-spacing: 0.3em;
+  margin: 0 0 4px;
+  padding-left: 0.3em; /* balance the trailing letter-spacing */
+}
+
+.tagline {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin: 0 0 48px;
+}
+
+.about { text-align: center; font-size: 18px; }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin: 40px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.links a {
+  display: inline-block;
+  padding: 10px 24px;
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 13px;
+  border-top: 1px solid var(--line);
+  padding-top: 24px;
+  margin-top: 48px;
+}
+
+footer a { color: var(--muted); }
+
+/* the privacy policy page */
+.doc h1 { font-weight: 400; font-size: 32px; margin: 0 0 4px; }
+.doc h2 { font-weight: 400; font-size: 20px; margin: 32px 0 8px; }
+.doc .updated { color: var(--muted); margin: 0 0 32px; }
+.doc .back { display: inline-block; margin-bottom: 32px; color: var(--muted); }
+.doc ul { padding-left: 20px; }
